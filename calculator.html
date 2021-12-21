@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+		<link rel="stylesheet" href="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/css/bootstrap.min.css" media="all" >
+		<link rel="stylesheet" href="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/css/custom.css" media="all" >
+		<!-- <link rel="stylesheet" href="https://cashdiscount.mybmr.com/assets/css/font-style.css" media="all" > -->
+		<link rel="stylesheet" href="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/css/utilities.css" media="all" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+			var $BASEURL = 'https://cashdiscount.mybmr.com/';
+		</script>
+	</head>
+<body>
+
+<header>
+    <div class="container my-3 " >
+      <div class="row">
+        <div class="col-md-10 mx-auto text-center">
+          <div class="pt-3 custom-padding-bottom position-relative "> 
+            <a href="https://cashdiscount.mybmr.com/">
+            <img src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/img/clover_logo.png" width="80" alt="" class="img-fluid" /></a>
+            <a href="https://cashdiscount.mybmr.com/">
+            <h3 class="fs-30 mt-4 fs-36 font-weight-bold text-white">Cash Discount Program</h3></a>
+            <p class="fs-18 mb-0 mt-4 text-white">Recoup the majority of your  Credit Card processing<br/>
+              fees. Easy to use and fully integrated with Clover devices.</p>
+            <a href="https://cashdiscount.mybmr.com/login" class="btn btn-warning px-4 py-2 position-absolute custom-login-btn  fs-16 text-uppercase">Login</a>
+            <a href="#" class="btn btn-warning px-4 py-2 position-absolute fs-16 text-uppercase custom-iso-btn">ISO/AGENT</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+<section class="second-section-main home_section">
+    <div class="container my-3" >
+      <div class="row">
+        <div class="col-md-10 mx-auto margin-top-minus">
+          <div class="bg-white rounded-12 shadow-b-4 p-3 p-lg-4">
+           <div class="rounded border text-center p-4 box-bg mb-3" id="future_div" style="display: none;">
+            <form class="rounded-12" method="" action="">
+             <input type="hidden" id="agent_name" name="agent_name" value="">
+                        <input type="hidden" id="agent_company_name" name="agent_company_name" value="">
+                        <input type="hidden" id="agent_email" name="agent_email" value="">
+                        <input type="hidden" id="agent_phone" name="agent_phone" value="">
+                        <input type="hidden" name="agentBtn2" value="1">
+
+              <h3 class="fs-16 font-weight-bold">Future Prospective Savings</h3>
+              <h4 class="mb-3 mt-3 fs-36"><b>$<span id="per_year"></span></b></h4>
+              <p class="mb-2 fs-16">Per Year</p>
+              <button type="button" id="btnEnterAgent" data-toggle="modal" data-target="#exampleModal" class="btn btn-success px-4 py-2 fs-16 text-uppercase btnEnterAgent">Enter Agent Code</button>
+              <i class="fa fa-info-circle" data-toggle="tooltip" title="Agent code gives access to % change, quote sharing, and customized marketing material."></i>
+               <p class="fs-16 mb-0 mt-3 text-dark">The above savings are based on the provided monthly volume and processing fees.</p>
+               </form>
+            </div>
+            
+            <div class="rounded border  p-4 d-flex align-content-center align-items-center box-bg ">
+              <label class="fs-16 mb-0 text-dark font-weight-normal ">Enter your monthly Credit processing volume</label>
+              <div class="input-group w-200 ml-4 position-relative"> <i class="fa fa-pencil fs-20 position-absolute custom-edit-icon"></i>
+                <input type="number" id="month_credit" step="1" max="" value="1" name="quantity" class="form-control quantity-field custom-input text-center pl-4 " >
+              </div>
+            </div>
+            <div class="rounded border  p-4 d-flex align-content-center align-items-center box-bg mt-3 ">
+              <label class="fs-16 mb-0 text-dark font-weight-normal ">Enter the amount of processing  fees you pay monthly</label>
+              <div class="input-group w-200 ml-4 position-relative"> <i class="fa fa-pencil fs-20 position-absolute custom-edit-icon"></i>
+                <input type="number" id="processing_fees" step="1" max="" value="1" name="quantity2" class="form-control quantity-field custom-input text-center pl-4 " >
+                
+              </div>
+            </div>
+            <div class="rounded border  p-4 d-flex align-content-center align-items-center box-bg mt-3 ">
+              <label class="fs-16 mb-0 text-dark font-weight-normal ">Cash Discount</label>
+              <div class="input-group w-200 ml-4 position-relative">
+                <input type="text" value="4" name="cash_discount" id="cash_discount" class="text-center custom-input text-center form-control valid" required="" readonly="true" style="background:transparent;">
+                </div>
+              <div class="input-group-prepend"> <span class="border-right-0 fs-14 pt-2 border-remove-2"><i class="fa fa-percent" aria-hidden="true"></i></span> </div>
+              <div class="input-group-prepend ml-4"><button type="button" id="homeAgentBtn" data-toggle="modal" data-target="#exampleModal" class="btnEnterAgent btn btn-success text-uppercase">Agent Code</button></div>
+               <div class="input-group-prepend " style="padding-left:0.3rem;"><i class="fa fa-info-circle infoBtn" data-toggle="tooltip" title="Agent code gives access to % change, quote sharing, and customized marketing material."></i>
+            </div>
+            </div>
+            <div class="rounded border  p-4 d-flex align-content-center align-items-center box-bg mt-3 ">
+              <label class="fs-16 mb-0 text-dark font-weight-normal ">Enter your average sale</label>
+              <div class="input-group w-200 ml-4 position-relative"> <i class="fa fa-pencil fs-20 position-absolute custom-edit-icon"></i> <i class="fa fa-usd custom-doller-text" aria-hidden="true"></i>
+                <input type="number" name="average_sale" id="average_sale" class="form-control custom-input text-center pl-4 valid" required="">
+              </div>
+            </div>
+            <div class="mt-4 text-center">
+              <button type="button" id="btncalculate" class="btn btn-success px-4 py-2 fs-16 text-uppercase">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="second-section-main share_quote_section" style="display:none;">
+    <div class="container my-3" >
+      <div class="row">
+        <div class="col-md-10 mx-auto margin-top-minus">
+          <div class="bg-white rounded-12 shadow-b-4 p-3 p-lg-4  d-block  d-md-flex">
+            <div class="col-md-6 col-12 p-0">
+              <div class="rounded border py-3 custom-table-01  box-bg mr-0 mr-md-3 mb-3 ">
+               <form id="frmCusInfo">
+                <h3 class="fs-16 font-weight-bold text-center d-block mb-2">Share This Quote</h3>
+                <table class="table table-bordered mt-3" cellpadding="10">
+                  <tbody>
+                    <tr>
+                      <td>Customer Name:</td>
+                      <td><input type="text" name="customer_name" id="customer_name" class="form-control" placeholder="" data-bv-field="customer_name">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Business Name:</td>
+                      <td><input type="text" name="business_name" id="business_name" class="form-control" placeholder="" data-bv-field="business_name">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Business Address:</td>
+                      <td><input type="text" name="business_address" id="business_address" class="form-control" placeholder="" data-bv-field="business_address"></td>
+                    </tr>
+                    <tr>
+                      <td>Customer Email:</td>
+                      <td><input type="text" name="customer_email" id="customer_email" class="form-control" placeholder="" data-bv-field="customer_email"></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </form>
+                <p class="mb-3  text-center">You will receive a copy of the quote via email </p>
+                <div class="mt-4 text-center d-flex justify-content-between px-3 "> 
+                  <button type="button" id="getFlyer" class="btn btn-success px-4 py-2 fs-16 text-uppercase">Get Flyer</button>
+                  <button type="button" id="openPreview" class="btn btn-success px-4 py-2 fs-16 text-uppercase">Preview Quote</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded border text-center col-md-6 col-12 py-3 box-bg mb-3 ">
+                <form class="rounded-12" method="" action="">
+                    <input type="hidden" id="agent_name" name="agent_name" value="">
+                    <input type="hidden" id="agent_company_name" name="agent_company_name" value="">
+                    <input type="hidden" id="agent_email" name="agent_email" value="">
+                    <input type="hidden" id="agent_phone" name="agent_phone" value="">
+                    <input type="hidden" name="agentBtn2" value="1">
+
+                  <h3 class="fs-16 font-weight-bold">Future Prospective Savings</h3>
+                  <h4 class="mb-3 mt-3 fs-36"><b>$<span id="per_year_cal"></span></b></h4>
+                  <p class="mb-2 fs-16">Per Year</p>
+                  <button type="button" id="btnEnterAgent" data-toggle="modal" data-target="#exampleModal" class="btnEnterAgent btn btn-success px-4 py-2 fs-16 text-uppercase">Enter Agent Code</button>
+                  <p class="fs-16 mb-0 mt-3 text-dark">The above savings are based on the provided monthly volume and processing fees.</p>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second-section-main get_flyer_section" style="display:none;">
+    <div class="container my-3" >
+      <div class="row">
+        <div class="col-md-10 mx-auto margin-top-minus">
+          <div class="bg-white rounded-12 shadow-b-4 p-3 p-lg-4  d-block  d-md-flex">
+            <div class="col-md-12 col-12 p-0">
+              <div class="rounded  p-2  ">
+                <h3 class="ml-2">Cash Discount Email Flyer</h3>
+              
+                
+                <div class="col-12  mb-3">
+                  <div class="row">
+                    <div class="col-xl-4">
+                      <div class="row align-items-center" style="position: sticky;  top: 100px;">
+                        <div class="col-12">
+                          <label class="font-weight-semibold">Logo</label>
+                          <div class="custom-file-upload">
+                            <label for="file-upload" class="custom-file-upload1"> <i class="fa fa-cloud-upload"></i> Upload logo </label>
+                            <input id="file-upload" type="file" accept="image/*" name="logo">
+                          </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                          <label class="font-weight-semibold">Agent Name</label>
+                          <input name="agent_name" class="form-control give_text agent_name" type="text" data-to="#Agent_Name" value="">
+                        </div>
+                        <div class="col-12 mt-2">
+                          <label class="font-weight-semibold">Agent Contact</label>
+                          <input name="agent_phone" class="form-control give_text agent_phone" type="text" data-to="#Agent_Contant" value="">
+                        </div>
+                        <div class="col-12 mt-2">
+                          <label class="font-weight-semibold">Agent Email</label>
+                          <input name="agent_email" class="form-control give_text agent_email" type="text" data-to="#Agent_Email" value="Johndoe@gmail.com">
+                        </div>
+                        <div class="col-12 mt-2">
+                          <label class="font-weight-semibold">Contact US today and</label>
+                          <input name="contact_us" class="form-control give_text contactUsText" type="text" data-to="#contant_us" value="Contact US today and">
+                        </div>
+                        <div class="col-12 mt-2">
+                          <label class="font-weight-semibold">start saving</label>
+                          <input name="saving" class="form-control give_text savingText" type="text" data-to="#saving" value="start saving">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-8">
+                      <div class="clover_flyer text-center pt-4">
+                        <div class="clover_logo"> <img width="120px" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/img/clover_logo.png" > </div>
+                        <div class="col-md-10 mx-auto">
+                          <div class="content-long">
+                            <h5 class="fs-26 mt-2 font-weight-bold text-grey">Example.</h5>
+                            <p class="mb-0 fs-16">Merchant processed $100,000 per month in Credit Cards, incurring processing fees of </p>
+                            <p class="mb-0 fs-16">approximately $4000.00. Using Cash Discount App the merchant should be able to recover the majority </p>
+                            <p class="mb-0 fs-16">of the processing fees. Merchant will provide the customer a discount for payment made by Cash, </p>
+                            <p class="mb-0 fs-16">Check and Debit of 3.85%.</p>
+                            <h2 class="mt-3  text-uppercase fw-900">Works seamlessly with <br>
+                              clover</h2>
+                            <p class="mt-4"><img class="img-fluid" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/img/1_clover.png"></p>
+                          </div>
+                        </div>
+                        <div class="bg-light py-4 px-3 text-center"> <img id="logo" width="120px" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/img/2_clover_logo.png">
+                          <div class="mt-4">
+                            <h4 class="fs-34 fw-900 text-uppercase text-grey" id="contant_us"></h4>
+                            <h5 class="fs-32 fw-900 text-uppercase text-success" id="saving"></h5>
+                          </div>
+                          <div class="row mt-5">
+                            <div class="col-md-3">
+                              <div class="fs-18 font-weight-bold text-center font-weight-bold text-uppercase" id="Agent_Name"></div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="fs-18 font-weight-bold text-center font-weight-bold text-uppercase" id="Agent_Contact"></div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="fs-18 font-weight-bold text-center font-weight-bold text-uppercase word-break-all" id="Agent_Email"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-dark-grey p-3 text-center">
+                          <p class="fs-16 text-grey mb-0">support@mybmr.com</p>
+                        </div>
+                        
+                          <div class=" mt-3">
+                          <a href="#" class="btn btn-secondary px-4 py-2 fs-14 text-uppercase mr-2 pull-left" id="sendMail"><i class="fa fa-envelope mr-2" ></i>Send Mail</a>
+                          <form action="https://cashdiscount.mybmr.com/CashDiscount/downloadFlayer" method="POST" id="downloadPdf" target="_blank">
+                            <input type="hidden" id="flyer_agent_name" name="flyer_agent_name" value="">
+                            <input type="hidden" id="flyer_agent_email" name="flyer_agent_email" value="">
+                            <input type="hidden" id="flyer_agent_phone" name="flyer_agent_phone" value="">
+                            <input type="hidden" id="flyer_contact_us_text" name="flyer_contact_us_text" value="">
+                            <input type="hidden" id="flyer_saving_text" name="flyer_saving_text" value="">
+                            <input type="hidden" id="flyer_logo" name="flyer_logo" value="">
+                          <a class="btn btn-primary px-4 py-2 fs-14 text-uppercase download pull-right" href="https://cashdiscount.mybmr.com//pdf/Agent_flyer_front.pdf" download><i class="fa fa-download mr-2"></i>Download</a>
+                          </form>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-3" id="autoScroll">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <div class="row">
+                <div class="col-lg-5 pb-0 mt-3 mt-lg-0" id="future_div" style="display: none;">
+                    <form class="bg-white rounded-12 shadow-b-4 p-3 p-lg-4 h-100" method="" action="">
+                        <input type="hidden" id="agent_name" name="agent_name" value="">
+                        <input type="hidden" id="agent_company_name" name="agent_company_name" value="">
+                        <input type="hidden" id="agent_email" name="agent_email" value="">
+                        <input type="hidden" id="agent_phone" name="agent_phone" value="">
+
+                        <div class="col-xl-12">
+                            <div class="cash_discount row cash-discount-program-responsive ">
+                                <h3 class="w-100 fs-24 font-weight-bold mb-0">Future Prospective Savings</h3>
+                                <div class="border rounded-12 p-3 w-100 text-center my-4">
+                                    <h4 class="mb-3 fs-22"><b>$<span id="per_year"></span></b></h4>
+                                    <p class="mb-2 fs-16">Per Year</p>
+                                    <button  type="button" id="btnEnterAgent" data-toggle="modal" data-target="#exampleModal" class="btnEnterAgent btn btn-success px-3 px-sm-4 py-2 fs-16 text-uppercase">Enter Agent Code</button>
+                                </div>
+                                <p class="w-100 fs-16 mb-0 text-dark">The above savings are based on the provided monthly volume and processing fees.</p>
+                            </div>
+                            <div class="row mt-3 cash-discount-program-responsive" style="display: none;" id="share_quo">
+                                <button type="button" id="shareQuoBtn"  class="btn btn-primary px-4 py-2 fs-16 text-uppercase">Share This Quote</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade mybmr-agent" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <form action="post" id="frmagent" enctype='multipart/form-data'>
+          <input type="hidden" name="checkModal" value="">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                <div class="modal-body position-relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center d-sm-flex align-items-center">
+                            <p class="mb-0">Please enter your </br> <strong>MYBMR Agent ID</strong></p>
+                            <input type="text" name="agentId" class="form-control w-auto ml-sm-3 mx-auto mt-3 mt-sm-0" id="agentId" required>
+                        </div>
+                        <div class="col-md-12 text-center d-flex justify-content-left align-items-center">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-3">
+                            <button type="button" class="btn btn-success px-4 py-2 fs-16 text-uppercase" id="checkAgent">Submit</button>
+                        </div>
+                    </div>
+                    <p class="mb-0 mt-3 mb-2 sign-divider-border">
+                        <strong class="px-2 bg-white">OR</strong>
+                        <span class="signup-hr-border-custom"></span>
+                    </p>
+                    <p class="mb-0">If you don't have MYBMR Agent ID, please <a href="https://cashdiscount.mybmr.com/CashDiscount/MyBMRAgentRegistration" target="_blank"><strong>REGISTER</strong>.</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade mybmr-agent" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
+        <form action="post" id="frmagent" enctype='multipart/form-data'>
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                <div class="modal-body position-relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center d-sm-flex align-items-center">
+                            <p class="mb-0">Cash<strong> Discount</strong></p>
+                            <div class="form-group input-group mb-0 w-120 ml-sm-3 mx-auto mt-3 mt-sm-0">
+                                <input type="number" name="cash_discount" min="0" id="desired_per" required class="text-center border-remove-1 form-control valid">
+                                <div class="input-group-prepend"> <span class="input-group-text border-right-0 fs-14 px-1 border-remove-2"><i class="fa fa-percent" aria-hidden="true"></i></span> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center d-flex justify-content-left align-items-center"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-3">
+                            <button type="button" class="btn btn-success px-4 py-2 fs-16 text-uppercase" id="checkDiscountPer">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade mybmr-agent email-popup-main" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+    <div class="modal-dialog marketing-popup-width modal-dialog-centered" role="document">
+        <form method="post" id="frmQuotePreview"  enctype='multipart/form-data'>
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body modal-scroll">
+                <div class="d-block custom-width-100">
+                    <div class="row">
+                      <div class="col-md-1"><b>From: </b></div>
+                      <div class="col-md-11" id="agent_name_preview"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"><b>To: </b></div>
+                      <div class="col-md-11"><span id="to_customer_name"></span></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-11" id="business_name_preview"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-11" id="business_address_preview"></div>
+                      <span id="cc" style="display: none;">cvazquez@maverickfl.com</span>
+                      <span id="to" style="display: none;"></span>
+                    </div>
+
+                </div><br/>
+              <div class="middle-taxt-main">
+              <p class="mb-2 text-secondary  mt-1" >Dear <span id="customer_name_preview"></span> </p>
+              <p class="mb-0 text-secondary"> I wanted to share with you the potential savings your business can realize utilizing the Cash Discount Program.</p>
+              <p class="mb-0 text-secondary"> This program has allowed thousands of merchants to recoup the majority of their processing fees.</p>
+              <p class="mb-1 text-secondary">I truly believe that this can be a game changer for your establishment, puting back a great deal of money into your business on a regular basis.</p>
+              <p class="mb-0 text-secondary">According to your input the following estimated proposal has been generated.</p>
+              <p class="mb-0 text-secondary">Using the cash Discount Program, you can recoup approximately:</p>
+                  <div class="text-center">
+              <button type="button" class="btn btn-success font-weight-bold mt-3 text-uppercase">$<span id="yearly_saving"></span> Annually</button>
+                </div>
+              <div class="shadow-sm bg-light border p-2 mt-3 w-280 cusotam-bg">
+              <p class="mb-0 text-secondary font-weight-bold ">Monthly processing volume: <span id="processing_volumne"> </p>
+              <p class="mb-0 text-secondary font-weight-bold mt-1 ">Average ticket: <span id="average_ticket"> </p>
+              <p class="mb-0 text-secondary font-weight-bold mt-1 ">Monthly processing fees: <span id="processing_fee"> </p>
+              </div>
+              <p class="mb-0 text-secondary mt-4"> Please give me a call to discuss this further, as I believe this can truly affect
+                your bottom line </p>
+              <p class="mb-0 text-secondary mt-1"> Looking forward to hearing from you. </p>
+              <p class="mb-0 text-secondary mt-3 "> <span id="agent_name_preview1"> </p>
+              <p class="mb-0 text-secondary mt-1 "> <span id="agent_email_preview"> </p>
+              <p class="mb-0 text-secondary mt-1 "> <span id="agent_phone_preview"> </p>
+                </div>
+              <div class="text-left mt-3"> <img class="img-fluid" width="110px" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/img/clover_logo.png"> </div>
+            </div>
+            <div class="modal-footer" >
+              <button type="button" class="btn btn-secondary px-3 py-2 " data-dismiss="modal">Cancel</button>
+              <button type="button" id="sendQuote" class="btn btn-success px-3 py-2 ">Send Quote</button>
+            </div>
+          </div>
+      </form>
+    </div>
+</div>
+
+<section class="second-section-main app_benifit_section" style="display:none;">
+    <div class="container my-3" >
+      <div class="row">
+        <div class="col-md-10 mx-auto margin-top-minus">
+          <div class="bg-white cash_discount_benifits-main rounded-12 shadow-b-4 p-3 p-lg-4  d-block  d-md-flex">
+            <div class="col-12 p-0">
+              <div class="rounded border py-3 custom-table-01  box-bg mr-0 mr-md-3 mb-3 ">
+               <div class="container">
+              <h4 class="fs-24 text-blck60 fw-600 mb-4 text-center">
+              Cash Discount App Benifits</h4>
+              <ul>
+                <li><i class="fa fa-chevron-right"></i>Generate additional income and increase residual margins substantially</li>
+                <li><i class="fa fa-chevron-right"></i>Reduce merchant attrition</li>
+                <li><i class="fa fa-chevron-right"></i>Increase Agent longevity</li>
+                <li><i class="fa fa-chevron-right"></i>Compete better in the marketplace</li>
+                <li><i class="fa fa-chevron-right"></i>Increase equipment sales and leases</li>
+                 <li><i class="fa fa-chevron-right"></i>Agent and ISO agnostic and another</li>
+              </ul>
+              <p class="px-5 py-2 text-center">Want to learn how? <button type="button" class="btn btn-success fs-14 text-uppercase join_us_btn">Join us</button></p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer class="d-flex justify-content-center p-3">
+	<div class="pull-right">
+		Copyright &copy; 2004-2021 <a href="https://www.mybmr.com/" target="_blanck">Mybmr</a>.</strong> All rights
+		reserved.
+	</div>
+	<div class="clearfix"></div>
+</footer>
+<!-- /footer content -->
+</div>
+</div>
+<!-- Bootstrap -->
+<script type="text/javascript" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/js/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cashdiscount.mybmr.com/assets/cashDiscountProgram/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js" ></script>
+
+<script src="https://cashdiscount.mybmr.com/assets/admin/js/jquery.validate.min.js" type="text/javascript"></script>
+
+<!-- Custom Theme Scripts -->
+<script type="text/javascript" src="./scripts/common.js"></script>
+
+<!-- jQuery -->
+
+</body>
+</html>
