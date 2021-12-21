@@ -7,6 +7,8 @@
 :root{
   --PrimaryGreen : #4AC665;
   --White : #ffffff;
+  --mainBg: #EEFFF8;
+  --headingTxt : #40B759;
 }
 
 h1,
@@ -45,10 +47,14 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  background: var(--mainBg);
 }
 
 
 /* Header  *********************************/
+.header{
+  background: var(--White);
+}
 .top-header{
   background: var(--PrimaryGreen);
   padding: 10px 0;
@@ -127,6 +133,15 @@ body {
   border-radius: 60px;
   text-align: center;
   transition: .3s all linear;
+  display: inline-block;
+  font-weight: 600;
+
+}
+.mainbtn{
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 30px;
 }
 .mainbtn:hover{
   background: rgb(81,208,108);
@@ -138,6 +153,224 @@ body {
   color: var(--White);
 
 }
+/* Header  *********************************/
+/* BANNER  *********************************/
+.banner-sec{
+  padding: 80px 0 0;
+  background: url(https://universal.mybmr.com/uploads/common/1313021602.png) no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.banner-content{
+  text-align: center;
+  color: var(--White);
+}
+.banner-content h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.banner-content h1 span{
+  font-weight:bolder;
+}
+.btnsecond{
+  background: transparent;
+  color: var(--White);
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.btnsecond:hover{
+  color: var(--White);
+}
+
+
+
+/* BANNER  *********************************/
+/* BENEFITS SEC  *********************************/
+.benefits-sec{
+  padding: 80px 0;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 11;
+}
+.benefits-sec::after{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  top: 50%;
+  right: -110px;
+  transform: translate(-50%,-50%);
+  background: url(https://universal.mybmr.com/uploads/common/746533115.png) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  z-index: -1;
+}
+.benefits-sec::before{
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%,-50%);
+  background: url(https://universal.mybmr.com/uploads/common/1111457338.png) no-repeat;
+  background-size: cover;
+  background-position: top left;
+  z-index: -1;
+}
+.top-benefits{
+  margin-bottom: 80px;
+}
+.main-heading{
+  text-align: center;
+}
+.main-heading .heading-icon img{
+ width: 80px;
+}
+.main-heading h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--headingTxt);
+  margin: 15px 0 10px;
+}
+.main-heading .heading-line{
+  margin-bottom: 30px;
+}
+.main-heading .heading-line img{
+   width: 100px;
+}
+.bene-list{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.bene-list h5{
+  font-size: 24px;
+  font-weight: normal;
+  color: #272727;
+}
+.benelisticon{
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benelisticon img{
+  width: 70%;
+}
+
+/* BENEFITS SEC  *********************************/
+/* WORK SEC  *********************************/
+.work-sec{
+  margin: 80px 0 0;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 11;
+}
+.work-sec::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://universal.mybmr.com/uploads/common/1520954650.png) no-repeat;
+  background-size: 90% auto;
+  background-position: top center;
+  z-index: -1;
+}
+.work-sec::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://universal.mybmr.com/uploads/common/2136282165.png) no-repeat;
+  background-size: 100% 56%;
+  background-position: bottom left;
+  z-index: -2;
+}
+.work-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.work-box{
+  cursor: pointer;
+  width: 23%;
+  text-align: center;
+}
+.iconbox{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  box-shadow: 8px 12px 10px 0px rgb(0 0 0 / 50%);
+  padding: 30px;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f2f2f2",GradientType=1);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 110;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.iconbox::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top: 50%;
+  left: 50%;
+  background: url(https://universal.mybmr.com/uploads/common/352230869.png) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: .5s all ease-in-out;
+}
+.work-box:hover .iconbox::before{
+  transform:translate(-50%, -50%) rotateZ(15deg);
+}
+.iconbox img{
+  max-width: 50px;
+  max-height: 40px;
+}
+.work-box p{
+  font-size: 18px;
+  font-weight: 600;
+}
+.work-para{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.work-para p{
+  line-height: 2em;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+/* WORK SEC  *********************************/
 
 
 
