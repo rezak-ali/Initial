@@ -1,15 +1,15 @@
 /* <style type="text/css"> */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --PrimaryGreen: #4AC665;
-    --White: #ffffff;
-    --mainBg: #EEFFF8;
-    --headingTxt: #40B759;
+  --PrimaryGreen: #4ac665;
+  --White: #ffffff;
+  --mainBg: #eefff8;
+  --headingTxt: #40b759;
 }
 
 h1,
@@ -18,403 +18,1047 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #000;
+  font-family: "Poppins", sans-serif;
+  color: #000;
 }
 
 /* GLOBAL ***************************/
 .home {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    background: var(--mainBg);
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: var(--mainBg);
 }
-
 
 /* Header  *********************************/
 .header {
-    background: var(--White);
+  background: var(--White);
 }
 
 .top-header {
-    background: var(--PrimaryGreen);
-    padding: 10px 0;
+  background: var(--PrimaryGreen);
+  padding: 10px 0;
 }
 
 .top-info {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
 }
 
 .top-info1 {
-    justify-content: end;
+  justify-content: end;
 }
 
 .info-icon img {
-    max-height: 24px;
+  max-height: 24px;
 }
 
 .info-txt a {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--White);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--White);
 }
 
 .navbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 15px 0;
 }
 
 .navbar-lft {
-    width: 30%;
+  width: 30%;
 }
 
 .navbar-rht {
-    width: 70%;
+  width: 70%;
 }
 
 .navbar-lft img {
-    width: 70%;
+  width: 70%;
 }
 
 .navbar-collapse {
-    justify-content: end;
-    gap: 15px;
+  justify-content: end;
+  gap: 15px;
 }
 
 .navbar-nav,
 .header-btns {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
 }
 
 .nav-item a,
 .header-btns a {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    color: #393939;
-    font-weight: 600;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #393939;
+  font-weight: 600;
 }
 
 .nav-item a:hover,
 .nav-item a:active,
 .header-btns a:hover,
 .header-btns a:active {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    color: var(--PrimaryGreen);
-    font-weight: 600;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: var(--PrimaryGreen);
+  font-weight: 600;
 }
 
 .header-btns a.mainbtn,
 .mainbtn {
-    background: rgb(64, 183, 89);
-    background: -moz-linear-gradient(0deg, rgba(64, 183, 89, 1) 0%, rgba(81, 208, 108, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(64, 183, 89, 1) 0%, rgba(81, 208, 108, 1) 100%);
-    background: linear-gradient(0deg, rgba(64, 183, 89, 1) 0%, rgba(81, 208, 108, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#40b759", endColorstr="#51d06c", GradientType=1);
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    color: var(--White);
-    border-radius: 60px;
-    text-align: center;
-    transition: .3s all linear;
-    display: inline-block;
-    font-weight: 600;
-
+  background: rgb(64, 183, 89);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(64, 183, 89, 1) 0%,
+    rgba(81, 208, 108, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(64, 183, 89, 1) 0%,
+    rgba(81, 208, 108, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(64, 183, 89, 1) 0%,
+    rgba(81, 208, 108, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#40b759", endColorstr="#51d06c", GradientType=1);
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  color: var(--White);
+  border-radius: 60px;
+  text-align: center;
+  transition: 0.3s all linear;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0px;
 }
 
 .mainbtn {
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    margin-top: 30px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 30px;
 }
 
 .mainbtn:hover {
-    background: rgb(81, 208, 108);
-    background: -moz-linear-gradient(0deg, rgba(81, 208, 108, 1) 0%, rgba(64, 183, 89, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(81, 208, 108, 1) 0%, rgba(64, 183, 89, 1) 100%);
-    background: linear-gradient(0deg, rgba(81, 208, 108, 1) 0%, rgba(64, 183, 89, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#51d06c", endColorstr="#40b759", GradientType=1);
-    box-shadow: 2px 4px 1px 0px rgba(173, 173, 173, .3);
-    color: var(--White);
-
+  background: rgb(81, 208, 108);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(81, 208, 108, 1) 0%,
+    rgba(64, 183, 89, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(81, 208, 108, 1) 0%,
+    rgba(64, 183, 89, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(81, 208, 108, 1) 0%,
+    rgba(64, 183, 89, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#51d06c", endColorstr="#40b759", GradientType=1);
+  box-shadow: 2px 4px 1px 0px rgba(173, 173, 173, 0.3);
+  color: var(--White);
 }
 
 /* Header  *********************************/
 /* BANNER  *********************************/
 .banner-sec {
-    padding: 80px 0 0;
-    background: url(https://universal.mybmr.com/uploads/common/1313021602.png) no-repeat;
-    background-size: cover;
-    background-position: top center;
+  padding: 80px 0 0;
+  background: url(https://universal.mybmr.com/uploads/common/1313021602.png)
+    no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 .banner-content {
-    text-align: center;
-    color: var(--White);
+  text-align: center;
+  color: var(--White);
 }
 
 .banner-content h1 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .banner-content h1 span {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .btnsecond {
-    background: transparent;
-    color: var(--White);
-    font-size: 26px;
-    font-weight: 600;
-    text-decoration: underline;
-    margin-bottom: 30px;
-    display: inline-block;
+  background: transparent;
+  color: var(--White);
+  font-size: 26px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .btnsecond:hover {
-    color: var(--White);
+  color: var(--White);
 }
-
-
 
 /* BANNER  *********************************/
 /* BENEFITS SEC  *********************************/
 .benefits-sec {
-    padding: 80px 0;
-    position: relative;
-    overflow-x: hidden;
-    z-index: 11;
+  padding: 80px 0;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 11;
 }
 
 .benefits-sec::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 350px;
-    top: 50%;
-    right: -110px;
-    transform: translate(-50%, -50%);
-    background: url(https://universal.mybmr.com/uploads/common/746533115.png) no-repeat;
-    background-size: contain;
-    background-position: top right;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  top: 50%;
+  right: -110px;
+  transform: translate(-50%, -50%);
+  background: url(https://universal.mybmr.com/uploads/common/746533115.png)
+    no-repeat;
+  background-size: contain;
+  background-position: top right;
+  z-index: -1;
 }
 
 .benefits-sec::before {
-    content: "";
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
-    background: url(https://universal.mybmr.com/uploads/common/1111457338.png) no-repeat;
-    background-size: cover;
-    background-position: top left;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background: url(https://universal.mybmr.com/uploads/common/1111457338.png)
+    no-repeat;
+  background-size: cover;
+  background-position: top left;
+  z-index: -1;
 }
 
 .top-benefits {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .main-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .main-heading .heading-icon img {
-    width: 80px;
+  width: 80px;
 }
 
 .main-heading h2 {
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--headingTxt);
-    margin: 15px 0 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--headingTxt);
+  margin: 15px 0 10px;
 }
 
 .main-heading .heading-line {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .main-heading .heading-line img {
-    width: 100px;
+  width: 100px;
 }
 
 .bene-list {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 30px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .bene-list h5 {
-    font-size: 24px;
-    font-weight: normal;
-    color: #272727;
+  font-size: 24px;
+  font-weight: normal;
+  color: #272727;
 }
 
 .benelisticon {
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benelisticon img {
-    width: 70%;
+  width: 70%;
 }
 
 /* BENEFITS SEC  *********************************/
+/* Testimonaial Samll SEC  *********************************/
+.smalltesti-sec {
+  padding: 80px 0;
+  position: relative;
+  z-index: 11;
+}
+.testi1-slider {
+  margin-top: 30px;
+}
+.smalltesti-box {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 255, 248, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 255, 248, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 255, 248, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#eefff8",GradientType=1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  position: relative;
+  z-index: 11;
+  transition: 0.5s all linear;
+}
+.smalltesti-box::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  right: 10px;
+  background: url(../images/quote.png) no-repeat;
+  background-size: contain;
+  background-position: top left;
+  z-index: -1;
+}
+.testi1-top {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.testi1-img {
+  width: 30%;
+}
+
+.testi1-img img {
+  width: 75px !important;
+}
+.teti1-slide .owl-item.active.center .smalltesti-box {
+  transform: scale(1);
+}
+.teti1-slide .owl-stage {
+  padding: 30px;
+}
+.testi1-main {
+  margin-top: 15px;
+}
+.testi1-main p {
+  font-size: 15px;
+}
+.teti1-slide::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--mainBg), transparent);
+  left: 0;
+  z-index: 10;
+}
+.teti1-slide::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(270deg, var(--mainBg), transparent);
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/* Testimonaial Samll SEC  *********************************/
 /* WORK SEC  *********************************/
 .work-sec {
-    margin: 80px 0 0;
-    padding-bottom: 80px;
-    position: relative;
-    z-index: 11;
+  margin: 80px 0 0;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 11;
 }
 
 .work-sec::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: url(https://universal.mybmr.com/uploads/common/1520954650.png) no-repeat;
-    background-size: 90% auto;
-    background-position: top center;
-    z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://universal.mybmr.com/uploads/common/1520954650.png)
+    no-repeat;
+  background-size: 90% auto;
+  background-position: top center;
+  z-index: -1;
 }
 
 .work-sec::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: url(https://universal.mybmr.com/uploads/common/2136282165.png) no-repeat;
-    background-size: 100% 56%;
-    background-position: bottom left;
-    z-index: -2;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://universal.mybmr.com/uploads/common/2136282165.png)
+    no-repeat;
+  background-size: 100% 56%;
+  background-position: bottom left;
+  z-index: -2;
+}
+.work-outer::after {
+  content: "";
+  width: 200px;
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://universal.mybmr.com/uploads/common/746533115.png)
+    no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  z-index: -1;
 }
 
 .work-boxes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 .work-box {
-    cursor: pointer;
-    width: 23%;
-    text-align: center;
+  cursor: pointer;
+  width: 23%;
+  text-align: center;
 }
 
 .iconbox {
-    position: relative;
-    width: 170px;
-    height: 170px;
-    box-shadow: 8px 12px 10px 0px rgb(0 0 0 / 50%);
-    padding: 30px;
-    background: rgb(255, 255, 255);
-    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f2f2f2", GradientType=1);
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 110;
-    margin: 0 auto;
-    margin-bottom: 80px;
+  position: relative;
+  width: 170px;
+  height: 170px;
+  box-shadow: 8px 12px 10px 0px rgb(0 0 0 / 50%);
+  padding: 30px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(242, 242, 242, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(242, 242, 242, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(242, 242, 242, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f2f2f2", GradientType=1);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 110;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .iconbox::before {
-    content: "";
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    top: 50%;
-    left: 50%;
-    background: url(https://universal.mybmr.com/uploads/common/352230869.png) no-repeat;
-    background-size: 100%;
-    background-position: center center;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: .5s all ease-in-out;
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  top: 50%;
+  left: 50%;
+  background: url(https://universal.mybmr.com/uploads/common/352230869.png)
+    no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.5s all ease-in-out;
 }
 
 .work-box:hover .iconbox::before {
-    transform: translate(-50%, -50%) rotateZ(15deg);
+  transform: translate(-50%, -50%) rotateZ(15deg);
 }
 
 .iconbox img {
-    max-width: 50px;
-    max-height: 40px;
+  max-width: 50px;
+  max-height: 40px;
 }
 
 .work-box p {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .work-para {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 80px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .work-para p {
-    line-height: 2em;
-    color: #1a1a1a;
-    font-size: 18px;
+  line-height: 2em;
+  color: #1a1a1a;
+  font-size: 18px;
 }
 
 /* WORK SEC  *********************************/
+/* Features SEC  *********************************/
+.feature-sec {
+  padding: 60px 0;
+  position: relative;
+  background: rgb(238, 255, 248);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eefff8",endColorstr="#ffffff",GradientType=1);
+  z-index: 11;
+}
+.feature-sec::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url(../images/feturesbg.png) no-repeat;
+  background-size: 100% 90%;
+  background-position: bottom center;
+  z-index: -1;
+}
+.features-content {
+  margin-top: 100px;
+}
+.features-boxes {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.feature-box {
+  background: var(--White);
+  padding: 30px;
+  border: 1px solid #4fc2688c;
+  border-radius: 30px;
+  text-align: center;
+  width: 30.9%;
+}
+.feature-img {
+  background: rgb(79, 194, 103);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4fc267",endColorstr="#79eb91",GradientType=1);
+  width: 120px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.feature-img img {
+  max-width: 60px;
+  max-height: 60px;
+}
+.feature-box h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #0c0c0c;
+  line-height: 1.6;
+}
+.feature-box p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #0c0c0c;
+}
+
+/* Features SEC  *********************************/
+/* Bonus SEC  *********************************/
+.bonus-sec {
+  padding: 60px 0;
+  position: relative;
+  z-index: 11;
+  background: var(--White);
+  overflow-x: hidden;
+}
+.bonus-sec::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/bonustopbg.png) no-repeat;
+  background-size: 100% 70%;
+  background-position: top center;
+  z-index: -2;
+}
+.bonus-sec::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  top: 0;
+  right: -110px;
+  background: url(../images/bonusbgrht.png) no-repeat;
+  background-size: contain;
+  background-position: top center;
+  z-index: -1;
+}
+.bonus-content {
+  margin-top: 60px;
+  position: relative;
+  z-index: 11;
+}
+.bonus-content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/bonuscenterbg.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: -1;
+}
+.bonus-box {
+  background: var(--White);
+  border: 1px solid #4fc2688c;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 100%);
+  margin-bottom: 30px;
+}
+.bonus-img {
+  background: rgb(79, 194, 103);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(79, 194, 103, 1) 0%,
+    rgba(121, 235, 145, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4fc267",endColorstr="#79eb91",GradientType=1);
+  width: 60px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bonus-img img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.bonus-top {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Bonus SEC  *********************************/
+/* Small Pricing SEC  *********************************/
+.smallprice {
+  position: relative;
+  padding: 60px 0;
+  z-index: 11;
+}
+.smallprice::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background: rgb(238, 255, 248);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eefff8",endColorstr="#ffffff",GradientType=1);
+  z-index: -1;
+}
+.smallprice::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  background: rgb(238, 255, 248);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(238, 255, 248, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: -1;
+}
+.smallprice-content h2 {
+  color: var(--headingTxt);
+}
+.smallprice-content h2 span {
+  font-size: 26px;
+  font-weight: normal;
+}
+/* Small Pricing SEC  *********************************/
+/* TESTI SEC  *********************************/
+.testi-sec {
+  padding: 60px 0 160px;
+  position: relative;
+  z-index: 11;
+  background: url(../images/testi-top.png) no-repeat;
+  background-size: 100% 90%;
+  background-position: top center;
+}
+.testi-sec::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: url(../images/testibg.png) no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom center;
+  z-index: -1;
+}
+.testi-outer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 20%;
+  left: -300px;
+  background: url(../images/testi-bg-lft.png) no-repeat;
+  background-size: contain;
+  background-position: top left;
+  z-index: -1;
+}
+.testi-outer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: url(../images//testi-bg-lft.png) no-repeat;
+  background-size: 90% auto;
+  background-position: top right;
+  z-index: -1;
+}
+.testi-content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.testi-box {
+  padding: 40px 30px 30px;
+  border: 1px solid rgba(204, 204, 204, 0.404);
+  border-radius: 30px;
+  background: url(../images/quote.png) no-repeat;
+  background-size: 60px auto;
+  background-position: 30px 30px;
+  box-shadow: 5px 5px 10px 0px rgba(173, 173, 173, 0.5);
+  background-color: var(--White);
+}
+.testi-box h5 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.testi-box p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.testi-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.testi-img {
+  border: 5px solid #fff;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 3px 3px 5px 0px rgba(173, 173, 173, 0.3);
+}
+.testi-name-starts h5 {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.stars img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.testi-slide .owl-stage-outer {
+  padding: 30px 0;
+}
+
+/* TESTI SEC  *********************************/
+/* Clover SEC  *********************************/
+
+.clover-sec{
+  padding: 0 0 60px;
+  z-index: 100;
+  position: relative;
+  background: url(../images/clover-bg.png) no-repeat;
+  background-size: 30% 100%;
+  background-position: top right;
+}
+.clover-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--headingTxt);
+}
+.clover-img{
+  margin-top: -100px;
+}
+
+/* Clover SEC  *********************************/
+/* Company SEC  *********************************/
+.company-sec{
+  padding: 60px 0;
+  position: relative;
+  z-index: 11;
+}
+.company-content{
+  background: var(--White);
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid #4BBC62;
+}
+.company-boxes{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+}
+.company-box{
+  width: 23%;
+  padding: 20px;
+  border: 1px solid #707070;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-box img{
+max-width: 200px;
+max-height: 100px;
+}
+.company-bg{
+  box-shadow: 0 0 30px 0 rgba(173, 173, 173, 0.3);
+}
+/* Company SEC  *********************************/
+/* FAQ SEC  *********************************/
+.faq-sec{
+  position: relative;
+  padding: 60px 0;
+  z-index: 11;
+  
+}
+.faq-content{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.faq-content .accordion-item{
+  border: 1px solid #707070;
+  box-shadow: 5px 5px 10px 0 rgba(173, 173, 173, 0.3);
+  margin-bottom: 30px;
+  border-radius: 60px;
+}
+.faq-content .accordion-button{
+  padding: 20px 20px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 24px;
+  font-weight: normal;
+}
+.faq-content .accordion-button[aria-expanded="true"]{
+color: var(--headingTxt);
+}
+.faq-content .accordion-button::after{
+  background: url(../images/arrowdown.png) no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width:40px;
+  height: 20px;
+}
+.faq-content .accordion-body{
+  padding: 0px 20px 20px;
+  background: transparent;
+  box-shadow: none;
+}
+.faq-num{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: var(--PrimaryGreen);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--White);
+  font-weight: bold;
+  margin-right: 20px;
+}
+/* FAQ SEC  *********************************/
+/* Footer SEC  *********************************/
+footer{
+  position: relative;
+  padding: 60px 0 0;
+  z-index: 11;
+}
+
+.faq-footer{
+  position: relative;
+  z-index: 111;
+}
+.faq-footer::after {
+  content: "";
+  width: 100%;
+  height: 77%;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  background: url(../images/footerbg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom center;
+  z-index: -2;
+}
+.footer-bot{
+  background: #1E8D35;
+}
+/* Footer SEC  *********************************/
+
+
 /* </style> */
