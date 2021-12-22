@@ -370,7 +370,7 @@ body {
   height: 60px;
   top: 10px;
   right: 10px;
-  background: url(../images/quote.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1391704328.png) no-repeat;
   background-size: contain;
   background-position: top left;
   z-index: -1;
@@ -590,7 +590,7 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url(../images/feturesbg.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1806594315.png) no-repeat;
   background-size: 100% 90%;
   background-position: bottom center;
   z-index: -1;
@@ -674,7 +674,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(../images/bonustopbg.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1630146647.png) no-repeat;
   background-size: 100% 70%;
   background-position: top center;
   z-index: -2;
@@ -686,7 +686,7 @@ body {
   height: 60%;
   top: 0;
   right: -110px;
-  background: url(../images/bonusbgrht.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/340017485.png) no-repeat;
   background-size: contain;
   background-position: top center;
   z-index: -1;
@@ -703,7 +703,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(../images/bonuscenterbg.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/927422211.png) no-repeat;
   background-size: contain;
   background-position: center center;
   z-index: -1;
@@ -825,7 +825,7 @@ body {
   padding: 60px 0 160px;
   position: relative;
   z-index: 11;
-  background: url(../images/testi-top.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1430098695.png) no-repeat;
   background-size: 100% 90%;
   background-position: top center;
 }
@@ -836,7 +836,7 @@ body {
   height: 100%;
   bottom: 0;
   left: 0;
-  background: url(../images/testibg.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1313347412.png) no-repeat;
   background-size: 100% 50%;
   background-position: bottom center;
   z-index: -1;
@@ -848,7 +848,7 @@ body {
   height: 400px;
   top: 20%;
   left: -300px;
-  background: url(../images/testi-bg-lft.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1951606965.png) no-repeat;
   background-size: contain;
   background-position: top left;
   z-index: -1;
@@ -860,7 +860,7 @@ body {
   height: 400px;
   top: 0;
   left: 0;
-  background: url(../images//testi-bg-lft.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1951606965.png) no-repeat;
   background-size: 90% auto;
   background-position: top right;
   z-index: -1;
@@ -874,7 +874,7 @@ body {
   padding: 40px 30px 30px;
   border: 1px solid rgba(204, 204, 204, 0.404);
   border-radius: 30px;
-  background: url(../images/quote.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/1391704328.png) no-repeat;
   background-size: 60px auto;
   background-position: 30px 30px;
   box-shadow: 5px 5px 10px 0px rgba(173, 173, 173, 0.5);
@@ -1006,7 +1006,7 @@ max-height: 100px;
 color: var(--headingTxt);
 }
 .faq-content .accordion-button::after{
-  background: url(../images/arrowdown.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/753141982.png) no-repeat;
   background-size: contain;
   background-position: center center;
   width:40px;
@@ -1050,7 +1050,7 @@ footer{
   position: absolute;
   bottom: 50px;
   left: 0;
-  background: url(../images/footerbg.png) no-repeat;
+  background: url(https://universal.mybmr.com/uploads/common/151744689.png) no-repeat;
   background-size: 100% 100%;
   background-position: bottom center;
   z-index: -2;
